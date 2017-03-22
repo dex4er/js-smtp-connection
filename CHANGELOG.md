@@ -5,6 +5,7 @@
   * Do not use `grunt`.
   * Requires `smtp-server-mit`.
   * Bundled logger from `nodemailer-shared`.
+  * Standard code style.
 
 ## v3.1.0 2016-12-21
 

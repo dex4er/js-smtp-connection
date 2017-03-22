@@ -33,6 +33,7 @@
     "proxy-test-server": "^1.0.0",
     "sinon": "^1.17.6",
     "smtp-server-mit": "^1.17.1",
+    "standard": "^9.0.2",
     "xoauth2": "^1.2.0"
   },
   "scripts": {
