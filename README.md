@@ -1,29 +1,26 @@
-# smtp-connection
+# smtp-connection-mit
+
+[![Build Status](https://secure.travis-ci.org/dex4er/js-smtp-connection-mit.svg)](http://travis-ci.org/dex4er/js-smtp-connection-mit) [![Coverage Status](https://coveralls.io/repos/github/dex4er/js-smtp-connection-mit/badge.svg)](https://coveralls.io/github/dex4er/js-smtp-connection-mit) [![npm](https://img.shields.io/npm/v/smtp-connection-mit.svg)](https://www.npmjs.com/package/smtp-connection-mit)
+
+This is a fork of [smtp-connection](https://www.npmjs.com/package/smtp-connection) module
+just before it changed a license from MIT to EUPL-v1.1.
 
 SMTP client module. Connect to SMTP servers and send mail with it.
 
 This module is the successor for the client part of the (now deprecated) SMTP module [simplesmtp](https://www.npmjs.com/package/simplesmtp). For matching SMTP server see [smtp-server](https://www.npmjs.com/package/smtp-server).
-
-[![Build Status](https://secure.travis-ci.org/nodemailer/smtp-connection.svg)](http://travis-ci.org/nodemailer/smtp-connection) [![npm version](https://badge.fury.io/js/smtp-connection.svg)](http://badge.fury.io/js/smtp-connection)
-
-## Other similar packages you might be interested in
-
-- **[nodemailer](https://github.com/nodemailer/nodemailer)** – all in one package to send email from Node.js
-- **[smtp-server](https://github.com/andris9/smtp-server)** – add SMTP server interface to your application
-- **[zone-mta](https://github.com/zone-eu/zone-mta)** – full featured outbound MTA built using smtp-connection and smtp-server modules
 
 ## Usage
 
 Install with npm
 
 ```
-npm install smtp-connection
+npm install smtp-connection-mit
 ```
 
 Require in your script
 
 ```javascript
-const SMTPConnection = require('smtp-connection');
+const SMTPConnection = require('smtp-connection-mit');
 ```
 
 ### Create SMTPConnection instance

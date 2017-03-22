@@ -1,13 +1,15 @@
-language: node_js
 sudo: false
-node_js:
-  - 6
-notifications:
-  email:
-    - andris@kreata.ee
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/0ed18fd9b3e529b3c2cc
-    on_success: change  # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-    on_start: false     # default: false
+language: node_js
+matrix:
+  include:
+    - node_js: "7"
+      env: NPM_RUN_SCRIPT=test-coverage
+    - node_js: "6"
+install:
+  - npm install
+  - if [ -n "$NPM_INSTALL_PACKAGES" ]; then npm install $NPM_INSTALL_PACKAGES; fi
+script:
+  - npm run ${NPM_RUN_SCRIPT:-test}
+after_script:
+  - npm install coveralls
+  - "test -f ./coverage/lcov.info && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"

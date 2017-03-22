@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.2.1 2017-03-22
+
+  * Do not use `grunt`.
+  * Requires `smtp-server-mit`.
+  * Bundled logger from `nodemailer-shared`.
+
 ## v3.1.0 2016-12-21
 
   * use setKeepAlive(true) on newly created sockets

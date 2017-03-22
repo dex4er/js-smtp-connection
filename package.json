@@ -1,45 +1,45 @@
 {
-  "name": "smtp-connection",
-  "version": "3.2.0",
+  "name": "smtp-connection-mit",
+  "version": "3.2.1",
   "description": "Connect to SMTP servers",
-  "main": "lib/smtp-connection.js",
+  "main": "lib/smtp-connection-mit.js",
   "directories": {
     "test": "test"
   },
-  "scripts": {
-    "test": "grunt mochaTest"
-  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/andris9/smtp-connection.git"
+    "url": "git://github.com/dex4er/js-smtp-connection-mit.git"
   },
   "keywords": [
     "SMTP"
   ],
-  "author": "Andris Reinman",
+  "author": "Piotr Roszatycki",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andris9/smtp-connection/issues"
+    "url": "https://github.com/dex4er/js-smtp-connection-mit/issues"
   },
-  "homepage": "https://github.com/andris9/smtp-connection",
+  "homepage": "http://github.com/dex4er/js-smtp-connection-mit",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "httpntlm": "1.7.3"
+  },
   "devDependencies": {
     "bunyan": "^1.8.5",
     "chai": "^3.5.0",
-    "grunt": "^1.0.1",
-    "grunt-cli": "^1.2.0",
-    "grunt-eslint": "^19.0.0",
-    "grunt-mocha-test": "^0.13.2",
     "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
     "proxy-test-server": "^1.0.0",
     "sinon": "^1.17.6",
-    "smtp-server": "^1.17.0",
+    "smtp-server-mit": "^1.17.1",
     "xoauth2": "^1.2.0"
   },
-  "dependencies": {
-    "httpntlm": "1.7.3",
-    "nodemailer-shared": "2.0.0"
+  "scripts": {
+    "test": "mocha",
+    "test-coverage": "nyc -r text -r lcov mocha"
   },
-  "engines": {
-    "node": ">=6.0.0"
+  "nyc": {
+    "exclude": []
   }
 }
