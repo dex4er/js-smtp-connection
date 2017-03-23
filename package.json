@@ -23,15 +23,15 @@
     "node": ">=6.0.0"
   },
   "dependencies": {
-    "httpntlm": "1.7.3"
+    "httpntlm": "1.7.5"
   },
   "devDependencies": {
-    "bunyan": "^1.8.5",
+    "bunyan": "^1.8.9",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "nyc": "^10.1.2",
     "proxy-test-server": "^1.0.0",
-    "sinon": "^1.17.6",
+    "sinon": "^2.1.0",
     "smtp-server-mit": "^1.17.1",
     "standard": "^9.0.2",
     "xoauth2": "^1.2.0"
