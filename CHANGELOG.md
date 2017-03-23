@@ -1,6 +1,6 @@
 # Changelog
 
-## v3.2.1 2017-03-22
+## v3.2.1 2017-03-23
 
   * Do not use `grunt`.
   * Requires `smtp-server-mit`.

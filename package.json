@@ -33,12 +33,13 @@
     "proxy-test-server": "^1.0.0",
     "sinon": "^2.1.0",
     "smtp-server-mit": "^1.17.1",
+    "snazzy": "^6.0.0",
     "standard": "^9.0.2",
     "xoauth2": "^1.2.0"
   },
   "scripts": {
-    "test": "mocha",
-    "test-coverage": "nyc -r text -r lcov mocha"
+    "test": "standard --verbose | snazzy && mocha",
+    "test-coverage": "standard --verbose | snazzy && nyc -r text -r lcov mocha"
   },
   "nyc": {
     "exclude": []
